@@ -1,0 +1,232 @@
+.content
+	width: 100%
+	min-height: 350px
+	height: 50vh
+	padding-top: 50px
+	+r(840)
+		height: auto
+
+.timer
+	width: 400px
+	min-height: 180px
+	margin-left: 80px
+	border: 1px solid #b8161e
+	border-radius: 6px
+	position: relative
+	float: left
+	transform: scale(3)
+	opacity: 0
+	+r(991)
+		margin: 0
+		transform: scale(1)
+		transition: all 0s ease!important
+		opacity: 1
+	+r(900)
+		float: none
+		margin: 0 auto
+	+r(480)
+		width: 320px
+		min-height: 150px
+	+r(360)
+		width: 290px
+	&__icon
+		position: absolute
+		width: 86px
+		height: 86px
+		background-color: #fff
+		border-radius: 50%
+		padding: 14px 0
+		top: -40px
+		left: 150px
+		text-align: center
+		+r(480)
+			left: 120px
+		+r(360)
+			left: 110px
+		.icon
+			font-size: 60px
+			fill: #b8161e
+	&__plugin
+		max-width: 320px
+		margin: 0 auto
+		padding-top: 30px
+		position: relative
+		+r(480)
+			max-width: 260px
+		li
+			display: inline-block
+			width: 32.3%
+			text-align: left
+			font-size: 80px
+			color: #b8161e
+			font-family: $ExoMedium, sans-serif
+			+r(480)
+				font-size: 58px
+				width: 29%
+				padding-right: 80px
+			+r(360)
+				padding-left: 12px
+				padding-right: 60px
+				font-size: 52px
+				padding-top: 10px
+	&__title
+		position: absolute
+		bottom: -12px
+		font-size: 23px
+		font-family: $ExoMedium, sans-serif
+		color: #b8161e
+		width: 100%
+		text-align: center
+		+r(480)
+			font-size: 22px
+		+r(360)
+			font-size: 20px
+		span
+			padding: 0 7px
+			background-color: #fff
+			font-weight: bold
+			font-family: $ExoBold, sans-serif
+
+.form
+	position: absolute
+	right: 20%
+	bottom: 0
+	max-width: 300px
+	width: 100%
+	min-height: 386px
+	background-color: #fff
+	box-shadow: 0 0 25px 0 rgba(0,0,0,0.6)
+	border-radius: 6px 6px 0 0
+	transform: translateX(100%)
+	opacity: 0
+	+r(1200)
+		right: 100px
+	+r(1040)
+		right: 55px
+		transform: translateX(0)
+		opacity: 1
+		transition: all 0s ease!important
+	+r(900)
+		position: inherit
+		margin: 40px auto
+		border-radius: 6px
+	&__title
+		padding: 10px
+		font-size: 26px
+		line-height: 1
+		min-height: 70px
+		background-color: #b8161e
+		text-align: center
+		color: #FFFFFF
+		text-shadow: 0 1px 2px rgba(0,0,0,0.4)
+		font-family: ExoMedium, sans-serif
+		border-radius: 6px 6px 0 0
+		margin-bottom: 25px
+		span
+			font-family: $ExoLight
+			font-size: 18px
+			font-weight: lighter
+	form,label,input,button,select,option
+		display: block
+	label
+		max-width: 240px
+		height: 34px
+		margin: 0 auto 25px
+	label.select
+		position: relative
+		option
+			&:first-child
+				font-family: $ExoMedium
+		&::before,&::after
+			position: absolute
+			content: ''
+			cursor: pointer
+			pointer-events: none
+		&::before
+			top: 0
+			right: 30px
+			height: 100%
+			width: 1px
+			background-color: #cfcfcf
+		&::after
+			right: 10px
+			top: 50%
+			margin-top: -2px
+			border-style: solid
+			border-width: 5px 5px 0 5px
+			border-color: #767676 transparent transparent transparent
+	select
+		padding: 0 12px
+		cursor: pointer
+		appearance: none
+		option
+			color: #000
+	input
+		padding: 12px
+	input,select
+		width: 100%
+		height: 100%
+		background-color: #f2f2f2
+		border: 1px solid #e9e9e9
+		border-radius: 6px
+		color: #666666
+		font-size: 16px
+		font-family: $ExoLight, sans-serif
+		font-weight: lighter
+	button
+		margin: 27px auto
+		width: 228px
+		height: 44px
+		color: #FFFFFF
+		font-size: 18px
+		text-align: center
+		font-family: $ExoMedium, sans-serif
+		font-weight: normal
+		border-radius: 22px
+		background-color: rgb(217, 25, 33)
+		box-shadow: 0 3px 9px 0 rgba(217, 25, 33, 0.47)
+
+.details
+	position: absolute
+	bottom: 0
+	left: auto
+	max-width: 520px
+	width: 100%
+	text-align: center
+	min-height: 98px
+	font-size: 28px
+	color: #FFFFFF
+	padding-top: 20px
+	cursor: pointer
+	font-family: $ExoLight, sans-serif
+	font-weight: lighter
+	background-color: rgba(0,0,0,0.4)
+	border-radius: 6px 6px 0 0
+	text-shadow: 0 1px 2px rgba(0,0,0,0.4)
+	+r(1040)
+		max-width: 400px
+		font-size: 22px
+		left: 135px
+	+r(991)
+		left: 55px
+	+r(900)
+		position: inherit
+		margin: 0 auto
+	+r(480)
+		width: 100%
+		font-size: 19px
+	+r(360)
+		font-size: 16px
+		min-height: 80px
+		.icon
+			display: none
+	.icon
+		fill: #fff
+		opacity: 0.3
+		font-size: 20px
+		vertical-align: middle
+		margin-left: 15px
+	span
+		font-family: $ExoMedium, sans-serif
+
+

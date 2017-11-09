@@ -1,0 +1,115 @@
+.head
+	min-height: 300px
+	height: 50vh
+	background: no-repeat -1px top
+	background-size: cover
+	padding: 15px
+	position: relative
+	+rh(750)
+		min-height: 500px
+	+r(899)
+		height: auto
+	+r(550)
+		background-position: -200px top
+		padding-bottom: 60px
+	&__main
+		padding-top: 5vh
+		float: left
+		max-width: 480px
+		padding-bottom: 30px
+		+r(899)
+			width: 100%
+			float: none
+			margin-top: 110px
+			padding-top: 0
+		+r(550)
+			margin-top: 140px
+		+r(480)
+			margin-top: 90px
+		h1
+			font-size: 24px
+			color: #fff
+			font-family: $ExoLight
+			text-transform: uppercase
+			font-weight: lighter
+			margin-bottom: 25px
+			opacity: 0
+			transform: translateY(-50px)
+			transition: all 0.3s linear
+			+r(991)
+				opacity: 1
+				transform: translate(0)
+				transition: all 0s linear
+			+r(550)
+				font-size: 22px
+			span
+				font-weight: bold
+				font-family: $ExoBold
+	&__list
+		padding-left: 25px
+		+r(400)
+			padding-left: 0
+		li
+			margin: 5px 0
+			font-size: 20px
+			line-height: 1.5
+			color: #fff
+			font-family: $ExoLight
+			font-weight: lighter
+			position: relative
+			transform: translateX(-50px)
+			opacity: 0
+			+r(991)
+				transform: translate(0)
+				opacity: 1
+				transition: all 0s ease!important
+			+r(550)
+				font-size: 18px
+			+r(400)
+				font-size: 17px
+				&::after
+					width: 16px
+					height: 16px
+					background-size: contain
+					left: -20px
+			&::after
+				position: absolute
+				content: ''
+				top: 5px
+				left: -30px
+				width: 19px
+				height: 19px
+				background-image: url(../img/check.svg)
+			span
+				font-family: $ExoMedium
+	&__logo
+		float: right
+		width: 300px
+		height: 300px
+		background-color: #fff
+		border-radius: 50%
+		margin-top: -150px
+		padding-top: 170px
+		box-shadow: 0 0 0 7px rgba(0,0,0,0.1)
+		+r(991)
+			width: 240px
+			height: 240px
+			padding-top: 150px
+			img
+				max-width: 140px
+		+r(899)
+			position: absolute
+			top: -140px
+			right: 35%
+			margin: 0
+		+r(480)
+			width: 100%
+			height: 215px
+			border-radius: 0
+			right: 0
+		img
+			display: block
+			max-width: 200px
+			margin: 0 auto
+
+

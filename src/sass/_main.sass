@@ -1,0 +1,68 @@
+.wrapper
+	max-width: 100%
+	overflow-x: hidden
+	position: relative
+	height: 100vh
+	+rh(750)
+		height: 100%
+	+r(480)
+		&::after,&::before
+			display: none
+	&::after,&::before
+		position: absolute
+		content: ''
+		bottom: 20vh
+		width: 46px
+		height: 150px
+		border-radius: 23px
+		background-color: #c1c1c1
+	&::before
+		left: -23px
+	&::after
+		right: -23px
+
+.icon-rocket
+	position: absolute
+	font-size: 300px
+	top: 20vh
+	right: 35%
+	fill: rgba(0,0,0,0.2) !important
+	z-index: 2
+	opacity: 0
+	transform: translate(-140%,140%)
+	transition-delay: 1s!important
+	transition: all 1s linear!important
+	+r(1200)
+		font-size: 220px
+		right: 30%
+		top: 30vh
+	+r(991)
+		top: 25vh
+		right: 10%
+		transform: translate(0)
+		transition: all 0s linear!important
+		transition-delay: 0s!important
+	+r(767)
+		top: 10px
+		right: 20px
+		font-size: 110px
+	+r(480)
+		font-size: 60px
+
+.pattern
+	background: #fff repeat
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 40px
+	+r(1200)
+		padding: 0 15px
+		margin: 0 40px
+	+r(640)
+		margin: 0 auto
+
+.animated
+	transform: translate(0) scale(1)!important
+	opacity: 1!important
+	transition: all 0.3s ease

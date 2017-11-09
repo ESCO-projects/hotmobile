@@ -1,0 +1,10 @@
+<svg id="header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 390">
+    <style>
+        .st0{opacity:8e-2}.st1{fill:#d91921}.st2{fill:#c5171e}
+    </style>
+    <g id="main">
+        <path d="M.1 352s306.6 76.4 578.4 11c530-127.5 823.2 13 823.2 13V3H1.5L.1 352z" class="st0"/>
+        <path class="st1" d="M.1 345s306.6 76.4 578.4 11c530-127.5 823.2 13 823.2 13V-4H1.5L.1 345z"/>
+    </g>
+    <path id="inshadow" class="st2" d="M578.6 349C308.4 414 3.8 338.9.2 338v7s306.6 76.4 578.4 11c530-127.5 823.2 13 823.2 13v-7s-293.2-140.5-823.2-13z"/>
+</svg>

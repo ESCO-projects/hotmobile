@@ -1,0 +1,13 @@
+---
+title: HOT mobile
+header: img/header.svg
+logo: img/logo.svg
+pattern: img/pattern.svg
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{{mixins.icon('rocket')}}
+{% include "partials/_header.html" %}
+{% include "partials/_content.html" %}
+{% endblock %}

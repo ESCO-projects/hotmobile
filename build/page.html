@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>HOT mobile</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#D91921">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#D91921">
+    <style>
+      .wrapper,
+      .icon-rocket {
+        opacity: 0;
+        transition: all 0.1s ease;
+      }
+
+    </style>
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <div class="pattern" style="background-image: url(img/pattern.svg);">
+      <!-- BEGIN content -->
+      <div class="wrapper"> <svg class="icon icon-rocket"><use xlink:href="img/sprite.svg#icon-rocket"></use></svg>
+        <header class="head" style="background-image: url(img/header.svg);">
+          <div class="container">
+            <main class="head__main">
+              <h1><span>Hot Mobile</span> продолжает с революции</h1>
+              <ul class="head__list">
+                <li>Безлимитный интернет <span>100 GB</span></li>
+                <li>Безлимитные звонки</li>
+                <li>Скидки на домашние коммуникации</li>
+                <li>Самая быстрая сеть интернета <span>4G+</span></li>
+                <li>скидки -10&#8362; на семейную программу</li>
+                <li><span>500</span> минут для звонков за границу (31 страна)</li>
+                <li>От <span>29 	&#8362;/мес</span></li>
+                <li>Персональный менеджер</li>
+              </ul>
+            </main>
+            <div class="head__logo"> <img src="img/logo.svg" alt="HotMobile"> </div>
+          </div>
+        </header>
+        <section class="content">
+          <div class="container">
+            <!-- start timer -->
+            <div class="timer">
+              <div class="timer__icon"> <svg class="icon icon-percent"><use xlink:href="img/sprite.svg#icon-percent"></use></svg> </div>
+              <ul class="timer__plugin js_timer">
+                <li class="cou_hours"></li>
+                <li class="cou_min"></li>
+                <li class="cou_sec"></li>
+              </ul>
+              <div class="timer__title"> Успей, пока не закончилось<br> <span>акционное предложение</span> </div>
+            </div>
+            <!-- end timer -->
+            <!-- start form -->
+            <div class="form">
+              <div class="form__title"> Оформить заявку<br> <span>что-бы узнать больше</span> </div>
+              <form class="message js_form"> <input type="hidden" name="DATA[TITLE]" value="HOT mobile"> <input type="hidden" name="DATA[SOURCE_ID]" value="заявка"> <label>
+          <input type="text" name="DATA[NAME]" placeholder="Ваше Имя" required autocomplete="off">
+        </label> <label>
+          <input class="js_tel_mask" type="tel" name="DATA[PHONE_WORK]" placeholder="Ваш телефон" required autocomplete="off">
+        </label> <label class="select">
+          <select required name="DATA[COMMENTS]">
+            <option value="" selected>Текущий оператор</option>
+            <option value="Partner">Partner</option>
+            <option value="Cellcom">Cellcom</option>
+            <option value="Pelephone">Pelephone</option>
+            <option value="012 Mobile">012 Mobile</option>
+            <option value="Golan Telecom">Golan Telecom</option>
+            <option value="Rami Levy">Rami Levy</option>
+            <option value="Walla Mobile">Walla Mobile</option>
+            <option value="Home Cellular">Home Cellular</option>
+            <option value="P-mobile">P-mobile</option>
+            <option value="другой вариант">другой вариант</option>
+          </select>
+        </label> <button>Отправить</button> </form>
+            </div>
+            <!-- end form -->
+            <div class="details"> Получить детальную информацию<br> можно после <span>отправки формы</span> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> </div>
+          </div>
+        </section>
+      </div>
+      <!-- END content -->
+    </div>
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

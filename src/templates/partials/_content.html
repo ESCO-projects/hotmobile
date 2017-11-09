@@ -1,0 +1,61 @@
+<section class="content">
+  <div class="container">
+
+    <!-- start timer -->
+    <div class="timer">
+      <div class="timer__icon">
+        {{mixins.icon('percent')}}
+      </div>
+      <ul class="timer__plugin js_timer">
+        <li class="cou_hours"></li>
+        <li class="cou_min"></li>
+        <li class="cou_sec"></li>
+      </ul>
+      <div class="timer__title">
+        Успей, пока не закончилось<br>
+        <span>акционное предложение</span>
+      </div>
+    </div>
+    <!-- end timer -->
+
+    <!-- start form -->
+    <div class="form">
+      <div class="form__title">
+        Оформить заявку<br>
+        <span>что-бы узнать больше</span>
+      </div>
+      <form class="message js_form">
+        <input type="hidden" name="DATA[TITLE]" value="HOT mobile">
+        <input type="hidden" name="DATA[SOURCE_ID]" value="заявка">
+        <label>
+          <input type="text" name="DATA[NAME]" placeholder="Ваше Имя" required autocomplete="off">
+        </label>
+        <label>
+          <input class="js_tel_mask" type="tel" name="DATA[PHONE_WORK]" placeholder="Ваш телефон" required autocomplete="off">
+        </label>
+        <label class="select">
+          <select required name="DATA[COMMENTS]">
+            <option value="" selected>Текущий оператор</option>
+            <option value="Partner">Partner</option>
+            <option value="Cellcom">Cellcom</option>
+            <option value="Pelephone">Pelephone</option>
+            <option value="012 Mobile">012 Mobile</option>
+            <option value="Golan Telecom">Golan Telecom</option>
+            <option value="Rami Levy">Rami Levy</option>
+            <option value="Walla Mobile">Walla Mobile</option>
+            <option value="Home Cellular">Home Cellular</option>
+            <option value="P-mobile">P-mobile</option>
+            <option value="другой вариант">другой вариант</option>
+          </select>
+        </label>
+        <button>Отправить</button>
+      </form>
+    </div>
+    <!-- end form -->
+
+    <div class="details">
+      Получить детальную информацию<br>
+      можно после <span>отправки формы</span> {{mixins.icon('arrow')}}
+    </div>
+  </div>
+</section>
